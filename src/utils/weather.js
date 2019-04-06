@@ -12,7 +12,9 @@ request({
        callback (undefined, {
            temperature: (body.currently.temperature-32)*5/9,
            apparentTemperature: (body.currently.apparentTemperature-32)*5/9,
-           forecast: (body.hourly.summary)
+           forecast: (body.hourly.summary),
+           precipIntensity: (body.currently.precipIntensity),
+           humidity: (body.currently.humidity)
 
        });
    } else {

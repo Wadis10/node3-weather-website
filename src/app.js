@@ -71,7 +71,9 @@ app.get('/weather', (req, res) => {
         location: results.address,
         temperature: weatherResults.temperature,
         apparent_Temperature: weatherResults.apparentTemperature,
-        Forecast: weatherResults.forecast
+        Forecast: weatherResults.forecast,
+        rain: weatherResults.precipIntensity,
+        humidity: weatherResults.humidity
 
     })
 });
